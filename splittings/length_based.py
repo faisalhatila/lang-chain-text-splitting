@@ -18,11 +18,11 @@ These missions have not only expanded our knowledge of the universe but have als
 
 splitter = CharacterTextSplitter(
     chunk_size=100,
-    chunk_overlap=0,
+    chunk_overlap=20,
     separator=''
 )
 
-# result = splitter.split_text(text=text)
-result = splitter.split_documents(docs)
+result = splitter.split_text(text=text)
+# result = splitter.split_documents(docs)
 
-print(result[0].page_content)
+print(result)
